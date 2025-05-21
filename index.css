@@ -1,0 +1,105 @@
+*{
+    font-family: 'Montserrat', sans-serif; /*Estilo de Fonte*/
+    margin: 0; /*reseta a margin para 0, pois todo navegador ja tem um padrao*/
+    padding: 0; /*reseta o padding para 0, pois todo navegador ja tem um padrao */
+    box-sizing: border-box; /*Limita o tamanho da altura e da largura conforme vc coloca oas valores e faz a conta sozinha*/
+}
+
+header{
+    margin: 44px 0 144px 78px; /*Define o espaçamento do cabeçalho 44 e de cima, 0 e da direita, 144 e de baixo ate a iamgem, 78 e da esqueda da pagina */
+}
+
+.header{
+    color: #7d6a60; /*Cor do Texto*/
+    font-size: 24px; /*Tamanho da fonte*/
+    font-weight: 600; /*Largura da fonte, pegando como base o font family que foi escolhido como padrao de fonte*/
+    line-height: 29px; /*Altura da linha*/
+    cursor: pointer; /*Muda o cursor quando passa em cima do link*/
+    margin-right: 23px; /*Margem da direita, usou para espaçar uma palavra da outra*/
+}
+
+.button-header{
+    background-color: #9cd2f1; /* Cor do botao*/
+    border-radius: 20px; /*Arredonda o botao*/
+    width: 130px; /*Largura do butao*/
+    height: 41px; /*Altura do butao*/
+    cursor: pointer; /*Muda o cursor quando passa em cima do link*/
+    border: none; /*Border none tira a borda do butao*/
+    font-weight: 600; /*Largura da fonte, pegando como base o font family que foi escolhido como padrao de fonte*/
+    font-size: 24px; /*Tamanho da fonte*/
+    line-height: 29px; /*Altura da linha*/
+    color: #ffffff; /*Cor da Escrita do Botao*/
+}
+
+.logo-image{
+    width: 568px; /*Largura da imagem*/
+    height: 500px; /*Altura da imagem*/
+    margin-left: 125px; /*distancia da borda da esquerda com a imagem*/
+    display: inline-block; /*Alinhas as colunas e pode colocar altura e largura*/
+}
+
+
+section {
+    display: inline-block; /*Alinhas as colunas e pode colocar altura e largura*/
+    margin-left: 45px; /*Distancia da imagem com a paragrafo da informaçoes*/
+}
+
+.title{
+    font-weight: 900; /*Largura da fonte, pegando como base o font family que foi escolhido como padrao de fonte*/
+    font-size: 70px; /*Tamanho da fonte*/
+    line-height: 122px; /*Altura da linha*/
+    color: #44362d; /*Cor do Texto*/
+}
+
+.caption{
+    width: 700px; /*Largura ate onde o texto pode ir nesse caso*/
+    font-weight: 500; /*Largura da fonte, pegando como base o font family que foi escolhido como padrao de fonte*/
+    font-size: 35px; /*Tamanho da fonte*/
+    line-height: 65px; /*Altura da linha*/
+    color: #7d6a60; /*Cor do texto*/
+}
+
+.information{
+ width: 700px; /*Largura ate onde o texto pode ir nesse caso*/
+ font-weight: 400; /*Largura da fonte, pegando como base o font family que foi escolhido como padrao de fonte*/
+ font-size: 24px; /*Tamanho da fonte*/
+ line-height: 29px; /*Altura da linha*/
+ text-align: justify; /*alinha o texto*/
+ color: #3d3d3d; /*Cor do texto*/
+ margin-top: 25px; /*Coloca um espaçamento entre o caption*/
+ margin-bottom: 25px; /*Coloca um espaçamento entre o button-section*/
+}
+
+.button-section{
+    background-color: #9cd2f1; /*Cor do butao*/
+    border: none; /*Border none tira a borda do butao*/
+    border-radius: 20px; /*Arredonda o botao*/
+    width: 239px; /*Largura do butao*/
+    height: 64px; /*Altura do butao*/
+    cursor: pointer; /*Muda o cursor quando passa em cima do link*/
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /*Esfumaça o butao atras e dos lados*/
+    font-weight: 700; /*Largura da fonte, pegando como base o font family que foi escolhido como padrao de fonte*/
+    font-size: 28px; /*Tamanho da fonte*/
+    line-height: 34px; /*Altura da linha*/
+    color: #ffffff; /*Cor do texto do botao*/
+    margin-bottom: 30px; /*Cola um espaçamento para baixo*/
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        display: none;
+    }
+
+    .logo-image{
+        display: block;
+        position: static;
+        max-width: 90%;
+    }
+    main{
+        position: static;
+        max-width: 90%;
+    }
+    section{
+        display: block;
+    }
+}
